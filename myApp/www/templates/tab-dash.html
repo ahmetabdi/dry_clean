@@ -1,0 +1,25 @@
+<ion-view view-title="Dashboard">
+  <ion-header-bar class="bar-dark" >
+    <h1 class="title">Pickup Location</h1>
+    <div class="buttons">
+      <button ng-click="centerOnMe()" class="button icon ion-navigate">Next</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <div id="map" data-tap-disabled="true"></div>
+    <div id="centerMarker"></div>
+  </ion-content>
+  <ion-footer-bar align-title="left" class="bar-dark">
+    <div class="buttons">
+      <button class="button button-light">
+        Recent Locations
+      </button>
+    </div>
+    <h1 class="title">{{locationCtrl.coordinates}}</h1>
+    <div class="buttons" ng-click="centerOnMe()">
+      <button class="button button-light icon icon-navigate">
+        Find Me
+      </button>
+    </div>
+  </ion-footer-bar>
+</ion-view>

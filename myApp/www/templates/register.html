@@ -1,0 +1,32 @@
+<ion-view view-title="Register">
+  <ion-content>
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Email</span>
+        <input type="text" ng-model="user.email">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Password</span>
+        <input type="password" ng-model="user.password">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Confirm Password</span>
+        <input type="password" ng-model="user.password_confirmation">
+      </label>
+    </div>
+    <div class="padding">
+      <button class="button button-block button-positive" ng-click="registerUser()">
+        Sign-In
+      </button>
+      <p class="text-center">
+        <a href="#/forgot-password">Forgot password</a>
+      </p>
+      <p class="text-center">
+        <a href="#/sign-in">Login</a>
+      </p>
+      <p class="text-center">
+        <a href="#/register">Register</a>
+      </p>
+    </div>
+  </ion-content>
+</ion-view>
